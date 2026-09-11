@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Checking environment..."
+  pre_build:
+    commands:
+      - echo "Running pre-build validations..."
+  build:
+    commands:
+      - echo "Packaging application..."
+artifacts:
+  files:
+    - index.html
+    - appspec.yml
+    - scripts/**/*
